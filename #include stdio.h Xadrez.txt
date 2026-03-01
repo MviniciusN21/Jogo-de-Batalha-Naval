@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+
+    // ==============================
+    // DECLARAÇÃO DAS VARIÁVEIS
+    // ==============================
+
+    int i;                  // Variável de controle para loops
+    int casas_torre = 5;    // Torre move 5 casas para a direita
+    int casas_bispo = 5;    // Bispo move 5 casas na diagonal
+    int casas_rainha = 8;   // Rainha move 8 casas para a esquerda
+
+    // ==============================
+    // MOVIMENTO DA TORRE (for)
+    // ==============================
+    // Torre move-se em linha reta.
+    // Simulação: 5 casas para a direita.
+
+    printf("Movimento da Torre:\n");
+
+    for (i = 1; i <= casas_torre; i++) {
+        printf("Direita\n");
+    }
+
+    // ==============================
+    // MOVIMENTO DO BISPO (while)
+    // ==============================
+    // Bispo move-se na diagonal.
+    // Simulação: 5 casas para cima e à direita.
+
+    printf("\nMovimento do Bispo:\n");
+
+    i = 1;  // Inicialização da variável de controle
+
+    while (i <= casas_bispo) {
+        printf("Cima Direita\n");
+        i++;
+    }
+
+    // ==============================
+    // MOVIMENTO DA RAINHA (do-while)
+    // ==============================
+    // Rainha move-se em todas as direções.
+    // Simulação: 8 casas para a esquerda.
+
+    printf("\nMovimento da Rainha:\n");
+
+    i = 1;  // Reinicializa variável
+
+    do {
+        printf("Esquerda\n");
+        i++;
+    } while (i <= casas_rainha);
+
+    return 0;
+}
